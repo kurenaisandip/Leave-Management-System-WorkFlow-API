@@ -1,4 +1,5 @@
 using Microsoft.OpenApi.Models;
+using FluentValidation;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +8,8 @@ builder.Services.AddOpenApi();
 
 // Add services to the container.
 builder.Services.AddControllers();
+
+builder.Services.AddProblemDetails();
 
 // Configure Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
@@ -19,6 +22,8 @@ builder.Services.AddSwaggerGen(c =>
         Description = "An API for managing leave requests"
     });
 });
+
+builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 
 var app = builder.Build();
 
@@ -35,7 +40,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
-app.UserAuthentication();
+app.UseAuthentication();
 app.MapControllers();
 
 

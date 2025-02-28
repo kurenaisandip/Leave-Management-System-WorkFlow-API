@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Leave-Management-System-WorkFlow-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e17de644995f2d7ba63711341351033b7881530c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96c1364ff2b2b8361756359a047a23ed4f528c7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Leave-Management-System-WorkFlow-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Leave-Management-System-WorkFlow-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
