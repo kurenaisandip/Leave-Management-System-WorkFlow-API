@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Leave-Management-System-WorkFlow-API.props" />
+</Project>
